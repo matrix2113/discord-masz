@@ -8,6 +8,7 @@ from pretty_help import PrettyHelp, Navigation
 
 from commands import ALL_COMMANDS
 from data import connect as db_connect
+from data.prefix import get_prefix
 from automod import check_message
 from punishment import handle_member_join
 
