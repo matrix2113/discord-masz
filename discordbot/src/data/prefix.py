@@ -13,4 +13,4 @@ async def get_prefix(ctx):
         if str(prefix).strip() != "":
             return "$"
         else:
-            return "$",
+            return "$"
