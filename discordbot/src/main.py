@@ -19,7 +19,7 @@ color = discord.Color.dark_gold()
 intents = discord.Intents.default()
 intents.members = True
 
-client = commands.Bot(os.getenv("BOT_PREFIX", "$") if str(os.getenv("BOT_PREFIX", "$")).strip() != "" else "$", intents=intents)  # prefix defaults to $
+client = commands.Bot(command_prefix=get_prefix, intents=intents)  # prefix defaults to $
 client.help_command = PrettyHelp(navigation=nav, color=color, active_time=5, no_category="Commands", sort_commands=True, show_index=False)
 
 for command in ALL_COMMANDS:
